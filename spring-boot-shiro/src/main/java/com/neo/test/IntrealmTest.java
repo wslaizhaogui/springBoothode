@@ -22,7 +22,7 @@ public class IntrealmTest {
     @Test
     public void testAuthentication() throws IOException {
 
-        IniRealm iniRealm = new IniRealm(String.valueOf(new PathMatchingResourcePatternResolver().getResources("classpath:user.ini")));
+        IniRealm iniRealm = new IniRealm("classpath:shiro.ini");
 
         //1，构建SecurityManager环境
         DefaultSecurityManager defaultSecurityManager = new DefaultSecurityManager();
